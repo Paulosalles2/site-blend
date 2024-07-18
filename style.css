@@ -1,0 +1,111 @@
+/* Estilos básicos */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    padding: 0;
+    background-image: url('https://clipart.info/images/ccovers/15809974683D-Red-Heart-PNG-Clip-Art-Image.png');
+    background-repeat: repeat;
+} 
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+} 
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #e74c3c;
+    font-family: 'Gabriela', serif;
+}
+
+main {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.declaration {
+    background-color: #fff7f8;
+    border: 2px solid #e74c3c;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #888;
+    font-style: italic; 
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+footer p::before {
+    content: "© ";
+}
+
+footer p::after {
+    content: " Todos os direitos reservados.";
+} 
+
+.link {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+/* Estilos responsivos para celulares */
+@media (max-width: 480px) {
+    body { 
+        background-size: cover; /* Ajusta o fundo para cobrir toda a tela */
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .declaration {
+        padding: 15px; 
+        font-size: 1em;
+    }
+
+    .link {
+        font-size: 0.9em;
+        padding: 10px;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        background-color: #e74c3c;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .link:hover {
+        background-color: #c0392b;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+} 
